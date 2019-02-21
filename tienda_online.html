@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Tienda Online</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h2>¡Bienvenidos a la tienda online!</h2>
+			<br>
+			<h4>Elija que desea hacer:</h4>
+			<br>
+            <form action="insertar_productos.html" method="POST">
+                <input type="hidden" name="accion" value="guardar"/>
+                <input type="submit" class="btn btn-info" value="Grabar productos"/>
+               <br><br>
+            </form>
+            <form action="comprar_productos.php" method="POST">
+                <input type="hidden" name="accion" value="mostrar"/>
+                <input type="submit" class="btn btn-success" value="Comprar"/>
+            </form>
+        </div>    
+    </body>                       
+</html>
